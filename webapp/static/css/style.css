@@ -1,0 +1,46 @@
+/* 城市犯罪可视化地图 样式 */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: "Microsoft YaHei", "PingFang SC", sans-serif; }
+body { display: flex; }
+
+#sidebar {
+  width: 320px; height: 100vh; overflow-y: auto; background: #f7f8fa;
+  border-right: 1px solid #e0e0e0; padding: 16px; flex-shrink: 0;
+}
+#sidebar h1 { font-size: 18px; margin: 0 0 4px; }
+#sidebar .subtitle { font-size: 12px; color: #666; margin: 2px 0 12px; }
+.muted { color: #999; }
+.small { font-size: 11px; }
+
+.panel { border-top: 1px solid #e8e8e8; padding: 10px 0; }
+.panel h2 { font-size: 13px; margin: 4px 0 8px; color: #333; }
+
+.chips label { display: inline-block; margin: 2px 4px 2px 0; cursor: pointer; }
+.chips input { margin-right: 3px; }
+
+.select { width: 100%; padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 13px; }
+.play-row { margin-top: 8px; display: flex; gap: 6px; }
+.btn { padding: 6px 10px; border: 1px solid #2b6cb0; background: #2b6cb0; color: #fff; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.btn.ghost { background: #fff; color: #2b6cb0; }
+.btn:disabled { opacity: .5; cursor: default; }
+
+.select-all { display: flex; gap: 6px; margin-bottom: 6px; }
+.checklist { max-height: 200px; overflow-y: auto; font-size: 13px; }
+.checklist label { display: block; padding: 2px 0; cursor: pointer; }
+.checklist input { margin-right: 5px; }
+
+#map { flex: 1; height: 100vh; }
+
+#legend {
+  margin-top: 12px; font-size: 12px; background: #fff; border: 1px solid #e0e0e0;
+  border-radius: 6px; padding: 8px;
+}
+#legend .leg-item { display: flex; align-items: center; margin: 3px 0; }
+#legend .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+
+/* 弹窗 */
+.crime-popup { font-size: 12px; line-height: 1.6; }
+.crime-popup b { color: #2b6cb0; }
+
+/* Leaflet 覆盖层小调整 */
+.leaflet-container { font-family: inherit; }

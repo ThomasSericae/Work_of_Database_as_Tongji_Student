@@ -1,0 +1,13 @@
+﻿outcome_id,outcome_name,outcome_cn,outcome_type
+1,Investigation complete; no suspect identified,调查结束，未锁定嫌疑人,终止型
+2,Court result unavailable,法院结果不可用,未决型
+3,Awaiting court outcome,待法院判决,未决型
+4,Status update unavailable,状态更新不可用,未决型
+5,Local resolution,现场调解/当地解决,处罚型
+6,Unable to prosecute suspect,无法起诉嫌疑人,终止型
+7,Offender given a caution,给予警告,处罚型
+8,Formal action is not in the public interest,不符公共利益，不采取行动,终止型
+9,Further action is not in the public interest,进一步行动不符合公共利益,终止型
+10,Further investigation is not in the public interest,进一步调查不符合公共利益,终止型
+11,Action to be taken by another organisation,转由其他机构处理,终止型
+12,Suspect charged as part of another case,并入另案处理,终止型

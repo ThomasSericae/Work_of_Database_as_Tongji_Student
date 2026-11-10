@@ -1,0 +1,22 @@
+﻿neighbourhood_id,neighbourhood_name,force_id
+BDT_BE,Bradford East,west-yorkshire
+BDT_BS,Bradford South,west-yorkshire
+BDT_BW,Bradford West,west-yorkshire
+BDT_CI,Bradford City,west-yorkshire
+BDT_KE,Keighley,west-yorkshire
+BDT_SH,Shipley,west-yorkshire
+CDT_HX,Halifax,west-yorkshire
+CDT_VL,Calderdale Valleys,west-yorkshire
+KDT_BS,Batley and Spen,west-yorkshire
+KDT_DEW,Dewsbury,west-yorkshire
+KDT_HUD,Huddersfield,west-yorkshire
+KDT_RUR,Rural,west-yorkshire
+LDT_CITY,Leeds City,west-yorkshire
+LDT_E,Leeds East,west-yorkshire
+LDT_NE,Leeds North East,west-yorkshire
+LDT_NW,Leeds North West,west-yorkshire
+LDT_S,Leeds South,west-yorkshire
+LDT_W,Leeds West,west-yorkshire
+WDT_CEN,Wakefield Central,west-yorkshire
+WDT_EAST,Wakefield East,west-yorkshire
+WDT_WEST,Wakefield West,west-yorkshire

@@ -1,0 +1,7 @@
+# Web 应用依赖(已通过 --target 装入 webapp/lib, 无需重复安装)
+flask>=3.0
+pymysql>=1.1
+
+# 说明: 原计划用 SQLAlchemy 做 SQLite/MySQL 双库切换, 但本机为 32 位 Python 3.10,
+# SQLAlchemy(>=1.4.43) 依赖的 greenlet 无 32 位 Windows 预编译轮子且需 C 编译器, 无法安装;
+# 故改用 webapp/db.py 中 ~40 行等价薄封装(sqlite3 + pymysql), 对外接口 fetchall/scalar 一致。

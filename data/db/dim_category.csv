@@ -1,0 +1,15 @@
+﻿category_id,category_name,category_cn,severity_level
+1,anti-social-behaviour,扰乱公共秩序,轻微
+2,bicycle-theft,自行车盗窃,轻微
+3,burglary,入室盗窃,较重
+4,criminal-damage-arson,毁坏财物/纵火,一般
+5,drugs,毒品犯罪,较重
+6,other-theft,其他盗窃,轻微
+7,possession-of-weapons,持有武器,较重
+8,public-order,公共秩序,轻微
+9,robbery,抢劫,严重
+10,shoplifting,商店行窃,轻微
+11,theft-from-the-person,扒窃,一般
+12,vehicle-crime,涉车犯罪,一般
+13,violent-crime,暴力犯罪,严重
+14,other-crime,其他犯罪,一般

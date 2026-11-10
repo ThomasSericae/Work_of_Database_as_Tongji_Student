@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>城市犯罪可视化地图 · 利兹 Leeds 2024H1</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/leaflet/leaflet.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/leaflet/MarkerCluster.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='vendor/leaflet/MarkerCluster.Default.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <aside id="sidebar">
+    <h1>城市犯罪可视化</h1>
+    <p class="subtitle">英国·利兹 Leeds · 2024 年 1–6 月</p>
+    <p class="subtitle muted">数据源：data.police.uk（街道级，共 <span id="total">…</span> 条）</p>
+
+    <section class="panel">
+      <h2>轻微犯罪分级</h2>
+      <div id="severity-box" class="chips"></div>
+    </section>
+
+    <section class="panel">
+      <h2>月份</h2>
+      <select id="month-select" class="select"><option value="">全部月份</option></select>
+      <div class="play-row">
+        <button id="play-btn" class="btn">▶ 逐月播放</button>
+        <button id="stop-btn" class="btn ghost" disabled>■ 停止</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>犯罪类别</h2>
+      <div class="select-all">
+        <button id="cat-all" class="btn ghost">全选</button>
+        <button id="cat-none" class="btn ghost">清空</button>
+      </div>
+      <div id="category-box" class="checklist"></div>
+    </section>
+
+    <section class="panel">
+      <h2>处理结果类型</h2>
+      <select id="outcome-select" class="select">
+        <option value="">全部</option>
+        <option value="处罚型">处罚型</option>
+        <option value="终止型">终止型</option>
+        <option value="未决型">未决型</option>
+        <option value="未记录">未记录</option>
+      </select>
+    </section>
+
+    <section class="panel">
+      <h2>社区</h2>
+      <select id="neighbourhood-select" class="select"><option value="">全部社区</option></select>
+    </section>
+
+    <section class="panel">
+      <h2>图层</h2>
+      <div class="chips" id="layer-box">
+        <label><input type="checkbox" id="layer-heat" checked> 热力图</label>
+        <label><input type="checkbox" id="layer-choro" checked> 社区面</label>
+        <label><input type="checkbox" id="layer-points"> 单点</label>
+      </div>
+      <p class="muted small">「单点」在放大到街道级后自动加载明细。</p>
+    </section>
+
+    <div id="legend"></div>
+  </aside>
+
+  <main id="map"></main>
+
+  <script src="{{ url_for('static', filename='vendor/leaflet/leaflet.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/leaflet/leaflet.markercluster.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/leaflet/leaflet-heat.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
